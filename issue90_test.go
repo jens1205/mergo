@@ -1,7 +1,7 @@
 package mergo_test
 
 import (
-	"github.com/imdario/mergo"
+	"github.com/jens1205/mergo"
 	"reflect"
 	"testing"
 )
@@ -10,11 +10,10 @@ type structWithStringMap struct {
 	Data map[string]string
 }
 
-
 func TestIssue90(t *testing.T) {
-    dst := map[string]structWithStringMap{
-    	"struct": {
-    		Data: nil,
+	dst := map[string]structWithStringMap{
+		"struct": {
+			Data: nil,
 		},
 	}
 	src := map[string]structWithStringMap{

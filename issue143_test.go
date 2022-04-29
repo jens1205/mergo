@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/imdario/mergo"
+	"github.com/jens1205/mergo"
 )
 
 func TestIssue143(t *testing.T) {

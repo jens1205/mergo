@@ -3,7 +3,7 @@ package mergo_test
 import (
 	"testing"
 
-	"github.com/imdario/mergo"
+	"github.com/jens1205/mergo"
 )
 
 type DstStructIssue84 struct {
