@@ -248,6 +248,7 @@ func deepMerge(dst, src reflect.Value, visited map[uintptr]*visit, depth int, co
 					dst.Set(src)
 				}
 			} else if src.Kind() == reflect.Ptr {
+				config.overwriteWithEmptyValue = true
 				if err = deepMerge(dst.Elem(), src.Elem(), visited, depth+1, config); err != nil {
 					return
 				}
