@@ -1,5 +1,8 @@
-module github.com/imdario/mergo
+module github.com/jens1205/mergo
 
 go 1.13
 
-require gopkg.in/yaml.v2 v2.3.0
+require (
+	github.com/imdario/mergo v0.3.12
+	gopkg.in/yaml.v2 v2.3.0
+)
